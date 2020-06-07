@@ -11,3 +11,14 @@ We need to make sure to give an image as an input so that the interpreter can re
 After that we need to create rectangle which will help us to cut the image specified through the dimensions. So we will use 
 
 // cv2.rectangle(img, frame1, frame2, thickness, border) 
+
+After creating the rectangle we will apply the Grab and Cut algorithm which will enforce the cut on the image and crop the background according to our need.
+
+// cv2.grabCut(img, mask, rect, bgModel, fgModel, iterations, cv2.GC_INIT_WITH_RECT)
+
+
+Finally we need to plot the image with the function plt.image() and then show the image using plt.imshow()
+
+//
+
+
